@@ -6,7 +6,7 @@ document.getElementById('bookSeats').addEventListener('click', () => {
     const seatCount = parseInt(document.getElementById('seatCount').value);
     const bookedSeats = bookSeats(seatCount);
     displaySeats();
-    document.getElementById('output').innerText = bookedSeats.length > 0 ? `Booked Seats: ${bookedSeats.join(', ')}` : 'Not enough seats available';
+    document.getElementById('output').innerText = bookedSeats.length > 0 ? `Booked Seats: ${bookedSeats.join(', ')}` : 'One person can book only 7 seat at a time';
 });
 
 function bookSeats(count) {
